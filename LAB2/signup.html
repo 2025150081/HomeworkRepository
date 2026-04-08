@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 2 Sign-up</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+
+    <body>
+        <h1>Searching your favorite Movies!</h1>
+        <p>
+            <a href="login.html">로그인</a>|
+            <a href="signup.html">회원가입</a>
+        </p>
+        <div>
+        <form method="post" action="/submit">
+            
+            <p><label>이름:
+                <input name = "이름" type = "text" size="25" maxlength="20" autofocus/> 
+            </label></p>
+
+            <p><label>생일:
+                <input name="Date" type="date"/>
+            </label></p>
+            
+            <p>성별:
+                <label>남성
+                <input name="성별" type="radio" value="남성"/>
+            </label>
+            <label>여성
+                <input name="성별" type="radio" value="남성"/>
+            </label></p>
+
+            <p>학년:
+                <input name="학년" type="number" min="1" max="4" step="1" val="1"/>
+            </p>
+
+            <p><label>ID:
+                <input name = "ID" type = "text" size="25" maxlength="20" autocomplete="on" required/> 
+            </label></p>
+
+            <p><label>Password:
+                <input password = "password" type ="password" size="25" maxlength="20" required/>
+            </label></p>
+
+            <p><label>E-mail:
+                <input name = "e-mail" type="email" size="25" placeholder="blahlah@gmail.com"/>
+            </label></p>
+
+            <p>
+                <input class="green" type="submit" value="Submit"/>
+                <input class="red" type="reset" value="Clear"/>
+            </p>
+
+        </form>
+        </div>
+    </body>
+</html>

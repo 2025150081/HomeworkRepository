@@ -1,0 +1,21 @@
+body{
+  font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+h1{
+  font-size: 3em;
+  font-weight: bold;
+}
+
+div{
+  border: 3px groove black;
+  padding: 20px;
+  width: 450px;
+  height: auto;
+  margin: 20px auto;
+}
+
+.red{background-color: lightcoral;}
+.green{background-color: lightgreen;}
