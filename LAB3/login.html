@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 2 Log-in</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+
+    <body>
+        <h1>Searching your favorite Movies!</h1>
+        <p>
+            <a href="login.html">로그인</a>|
+            <a href="signup.html">회원가입</a>
+        </p>
+        <div>
+        <from method="post" action="/submit">
+            <p><label>ID:
+                <input name = "ID" type = "text" size="25" maxlength="20" placeholder="Enter your ID" autocomplete="on" required/> 
+            </label></p>
+
+            <p><label>Password:
+                <input password = "password" type ="password" size="25" maxlength="20" placeholder="Enter your password" required/>
+            </label></p>
+            <p>
+                <input class="green" type="submit" value="로그인">
+                <input class="red" type="reset" value="리셋">
+            </p>
+        </form>
+        </div>
+    </body>
+</html>

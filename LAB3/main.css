@@ -1,0 +1,154 @@
+body{
+  font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;   
+}
+
+h1{
+  font-size: 3em;
+  font-weight: bold;
+}
+
+div{
+  border: 3px groove black;
+  padding: 20px;
+  width: 450px;
+  height: auto;
+  margin: 20px auto;
+}
+
+.red{background-color: lightcoral;}
+.green{background-color: lightgreen;}
+.slide-header {
+  position: relative;
+  animation: slide-left 2s ease-out forwards;
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(100%); 
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0); 
+    opacity: 1;
+  }
+}
+
+header {
+  width: 100%;
+  max-width: 1020px;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 1020px;
+}
+
+
+.main-container {
+  width: 100%;
+  max-width: 1020px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px 0;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;   
+  gap: 20px;
+  border: 1px;
+}
+
+.movie-card {
+  width: 180px;
+  height: 360px;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  position:relative;
+}
+
+.movie-card img {
+  width: 80px;
+  height: 120px;
+  transition: transform 1s ease;
+}
+
+.movie-card img:hover {
+  transform: scale(1.1);
+}
+
+.title {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  color: white;
+  background: rgba(0,0,0,0.6);
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.movie-card:hover .title {
+  opacity: 1;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-content {
+  width: 80%;  
+  max-width: 800px;       
+  line-height: 1.6;
+  font-size: 18px;
+  text-align: left;   
+  column-count: 2;   
+}
+
+@media (min-width: 801px) {
+  .main-container,
+  nav,
+  header {
+    max-width: 1020px;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 481px) {
+  .main-container,
+  nav,
+  header {
+    flex-direction: column;
+    max-width: 700px;
+  }
+  .movie-card {
+    max-width: 90px;
+    flex-direction: column;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .main-container,
+  nav,
+  header {
+    max-width: 450px;
+  }
+  
+}
+
